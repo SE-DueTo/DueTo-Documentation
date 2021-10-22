@@ -1,13 +1,13 @@
 # Software Requirements Specification
 
-## For \<Project Name\>
-## Version \<1.0\>
+## For DueTo
+## Version 1.0
 
 ## Revision History
 
 |**Date**|**Version**|**Description**|**Author**|
 | :-: | :-: | :-: | :-: |
-|\<dd/mmm/yy\>|\<x.x\>|\<details\>|\<name\>|
+|22/10/21|1.0|\<details\>|DueTo-Team|
 | | | | |
 | | | | |
 | | | | |
@@ -95,11 +95,11 @@
 
 ### 1.1 Purpose
 
-
+This document gives a general description of the DueTo Project. It explains our vision and all features of the product. Also it offers insights into the system of back- and frontend, the interfaces in both ends for communication and the constraints of the product.
 
 ### 1.2 Scope
 
-
+This document is designed for internal use only and will outline the development process of the project.
 
 ### 1.3 Definitions, Acronyms and Abbreviations
 
@@ -125,7 +125,7 @@ The next chapters provide information about our vision based on the use case dia
 
 ### 2.1 Vision
 
-to be determined (tbd)
+DueTo is a financial management tool for groups or individuals that helps with your dues. When lending money the tool helps you track who has to pay you how much and vice versa, everything contained in a modern looking design.
 
 ## 2.2 Product perspective
 
@@ -135,7 +135,7 @@ Our Use-Case-Diagram
 
 ### 2.3 User characteristics
 
-to be determined (tbd)
+Our usergroup spans across ages and jobs. Everybody who lents money to someone and the other way round is part of our targeted usergroup.
 
 ### 2.4 Dependencies
 
