@@ -16,7 +16,7 @@ Every registered user can settle an already existing debt. In this process the u
         - User clicks the "Send" button
     - NO: for an installment plan
         - User chooses YES to add a percantage payment or NO to add an amount
-        - User chooses YES for a repeating settling of a debt and adds an intervall
+        - User chooses YES for a repeated settling of a debt and adds an interval
         - User adds a payment method
         - User clicks on the "Send" button
          
@@ -41,7 +41,7 @@ tbd
 The user has to be logged in in the system.
 
 # 5 Postconditions
-(n/a)
+After clicking the "Send" button the Creditor is notified about the payment. 
  
 # 6 Extension Points
 (n/a)
