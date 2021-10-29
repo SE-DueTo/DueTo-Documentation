@@ -25,7 +25,8 @@ Every registered user can settle an already existing debt. In this process the u
 ![Settle Debt Activity Diagram](https://drive.google.com/uc?id=1OZ6hb4l8F73X_CataX6k-0ZrXDKe_JKk)
 
 ### 2.1.2 Mock-up
-![Settle Debt Form Wireframe]()
+![Settle Debt Form Wireframe](https://drive.google.com/uc?export=view&id=18GRL3ohwHzcj49IWHT-qlza3aiqrswio)
+![Settle Debt Form Wireframe](https://drive.google.com/uc?export=view&id=141tXRj1AFzHB91tjAPL2s6FFdO2xe3z1)
 
 ### 2.1.3 Narrative
 tbd
