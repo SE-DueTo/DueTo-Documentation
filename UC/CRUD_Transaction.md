@@ -8,7 +8,7 @@ This use case describes the creation, reading, updating and deleting of transact
 
 ## 2. Flow of Events
 
-![CRUD Groups](https://drive.google.com/uc?id=17vLGNSUJynYx0WAxH2sZJOcV2yHgsBy8)
+![CRUD Transaction](https://drive.google.com/uc?id=1hPavCfXMP0aJiT814f-xc29NtRdmUARr)
 
 ### 2.1 Basic flow
 Generally, the user can create and list all of his transactions. It is also possible to edit the transactions. Furthermore, the user will be able to delete his transactions.
