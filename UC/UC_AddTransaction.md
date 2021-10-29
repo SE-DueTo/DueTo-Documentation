@@ -26,8 +26,8 @@ Every registered user is able to add a new transaction in order to request a pay
 ![Add Transaction Activity Diagram](https://drive.google.com/uc?id=1_uURahT5un0lH5y3K_RFsYyp9Z_TXIGJ)
 
 ### 2.1.2 Mock-up
-![Add Transaction Mock-up](https://drive.google.com/file/d/1LsfBCAfCXHdF6CM_wT1IGgt_HP0iJ09y/view?usp=sharing)
-![Add Transaction Mock-up](https://drive.google.com/file/d/1vJCLRHa1iKbxacWkNzUCNgQupoOlWxLb/view?usp=sharing)
+![Add Transaction Mock-up](https://drive.google.com/uc?export=view&id=1LsfBCAfCXHdF6CM_wT1IGgt_HP0iJ09y)
+![Add Transaction Mock-up](https://drive.google.com/uc?export=view&id=1vJCLRHa1iKbxacWkNzUCNgQupoOlWxLb)
 
 ### 2.1.3 Narrative
 tbd
