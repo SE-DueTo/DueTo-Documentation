@@ -30,7 +30,7 @@ Every registered user is able to add a new transaction in order to request a pay
 ![Add Transaction Mock-up](https://drive.google.com/uc?export=view&id=1vJCLRHa1iKbxacWkNzUCNgQupoOlWxLb)
 
 ### 2.1.3 Narrative
-tbd
+https://github.com/SE-DueTo/dueto-frontend/blob/main/features/transaction.feature
 
 ## 2.2 Alternative Flows
 (n/a)
