@@ -186,7 +186,7 @@ to be determined (tbd)
 
 The following graphic describes the relationship model of the in use database
 
-![Relationship Model](https://github.com/phoenixfeder/fc-com/raw/master/graphics/database_model.png)
+![Relationship Model](https://drive.google.com/uc?id=1DkA4YtGJi3EOSARXWOaku4YhALwyjpwX)
 
 ![Class Diagram](https://github.com/SE-DueTo/DueTo-Documentation/raw/master/img/class_diagram.png)
 
