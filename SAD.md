@@ -84,7 +84,7 @@ to be determined (tbd)
 
 ## 2.1 Technologies used
 
-tl;dr; Blogpost [here!](https://flashcardcommunity.wordpress.com/2019/06/01/week-10-ci-cd-tech-stack/?preview_id=241&preview_nonce=d917ff2d90&preview=true)
+tl;dr; Blogpost [here!](https://sedueto.wordpress.com/2021/10/12/week-1-2-technologies-and-roles/)
 
 IDEs:
 
@@ -188,7 +188,7 @@ The following graphic describes the relationship model of the in use database
 
 ![Relationship Model](https://drive.google.com/uc?id=1DkA4YtGJi3EOSARXWOaku4YhALwyjpwX)
 
-![Class Diagram](https://github.com/SE-DueTo/DueTo-Documentation/raw/master/img/class_diagram.png)
+![Class Diagram](https://github.com/SE-DueTo/DueTo-Documentation/raw/main/img/class_diagram.png)
 
 ## 10. Size and Performance
 
