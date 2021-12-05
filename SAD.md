@@ -163,7 +163,7 @@ Marked MVC class diagram
 
 ## 7. Deployment View
 
-to be determined (tbd)
+![Deployment View](https://drive.google.com/uc?id=1xClnNaOGhOPJxjTARu2QDPzFSjQrpKZu)
 
 ## 8. Implementation View
 
