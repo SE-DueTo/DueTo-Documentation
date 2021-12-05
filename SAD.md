@@ -155,7 +155,7 @@ MVC high level diagram
 
 Marked MVC class diagram
 
-to be determined (tbd)
+![MVC marked diagram](img/mvc_architecture.png)
 
 ## 6. Process View
 
