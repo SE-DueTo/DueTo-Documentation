@@ -23,9 +23,6 @@
 
     -   [3. Architectural Goals and Constraints](#3-architectural-goals-and-constraints)
 
-        -   [Frontend](#frontend)
-        -   [Backend](#backend)
-
     -   [4. Use-Case View](#4-use-case-view)
 
         -   [4.1 Use-Case Realizations](#41-use-case-realizations)
@@ -65,6 +62,7 @@ The scope of this SAD is to show the architecture of our DueTo project. Illustra
 | ----------- | ----------------------------------- |
 | SRS         | Software Requirements Specification |
 | UC          | Use Case                            |
+| MVC         | Model View Controler                |
 
 ### 1.4 References
 
@@ -80,7 +78,9 @@ This document contains the Architectural Representation, Goals and Constraints a
 
 ## 2. Architectural Representation and Patterns
 
-to be determined (tbd)
+We are trying to implement according to the MVC pattern:
+
+![MVC structure](img/mvc_structure.png)
 
 ## 2.1 Technologies used
 
@@ -136,19 +136,13 @@ We use Visual Studio Code for coding in the frontend. To display we use HTML and
 
 ## 3. Architectural Goals and Constraints
 
-Following a closer description of the front- and backend.
-
-### Frontend
-
-to be determined (tbd)
-
-### Backend
-
-to be determined (tbd)
+We decided to use Spring MVC as our main framework. It allows us to unite backend, frontend development and the database integration in one code base.
 
 ## 4. Use-Case View
 
-to be determined (tbd)
+Our Use-Case-Diagram
+
+![UseCaseDiagram](https://drive.google.com/uc?id=1cm9gGoyGPQBgYl-CeENYOEPFsI-1e7nx)
 
 ### 4.1 Use-Case Realizations
 
@@ -156,11 +150,12 @@ to be determined (tbd)
 
 ## 5. Logical View
 
-to be determined (tbd)
+MVC high level diagram
+![MVC high level diagram](img/mvc_structure.png)
 
-### 5.1 Overview
+Marked MVC class diagram
 
-to be determined (tbd)
+![MVC marked diagram](img/mvc_architecture.png)
 
 ## 6. Process View
 
@@ -168,7 +163,7 @@ to be determined (tbd)
 
 ## 7. Deployment View
 
-to be determined (tbd)
+![Deployment View](https://drive.google.com/uc?id=1xClnNaOGhOPJxjTARu2QDPzFSjQrpKZu)
 
 ## 8. Implementation View
 
@@ -186,8 +181,13 @@ to be determined (tbd)
 
 The following graphic describes the relationship model of the in use database
 
+Relationship Model
 ![Relationship Model](https://drive.google.com/uc?id=1nHTh1wwdvAp0_Q6aGNdHvT5h5j7aE481)
 
+Real world Model
+![Real world Model](img/er_diagram.png)
+
+Class Diagram
 ![Class Diagram](https://github.com/SE-DueTo/DueTo-Documentation/raw/main/img/class_diagram.png)
 
 ## 10. Size and Performance
