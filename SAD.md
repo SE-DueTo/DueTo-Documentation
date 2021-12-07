@@ -163,7 +163,13 @@ Marked MVC class diagram
 
 ## 7. Deployment View
 
+### 7.1 Deployment Process
+
 ![Deployment View](https://drive.google.com/uc?id=1xClnNaOGhOPJxjTARu2QDPzFSjQrpKZu)
+
+### 7.2 Deployment View
+
+to be determined (tbd)
 
 ## 8. Implementation View
 
