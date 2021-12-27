@@ -133,11 +133,36 @@ Our Use-Case-Diagram
 
 ![UseCaseDiagram](https://drive.google.com/uc?id=1cm9gGoyGPQBgYl-CeENYOEPFsI-1e7nx)
 
-### 2.3 User characteristics
+### 2.3 Technology Stack
+We chose a rather typical modern Web-Tech Stack because of existing expertise in the team and relevance for the companies we work for.
+
+Frontend
+
+    ReactJS
+    Javascript
+    CSS
+    MaterialUI
+
+Backend
+
+    Spring-Boot
+    MySQL
+
+Version control
+
+    Git
+    Github (https://github.com/SE-DueTo)
+
+Integrated development environments (IDE)
+
+    Microsoft Visual Studio Code
+    Jetbrains IntelliJ
+
+### 2.4 User characteristics
 
 Our usergroup spans across ages and jobs. Everybody who lents money to someone and the other way round is part of our targeted usergroup.
 
-### 2.4 Dependencies
+### 2.5 Dependencies
 
 to be determined (tbd)
 
@@ -162,19 +187,8 @@ to be determined (tbd)
 ### 3.2 Functionality – User Interface
 
 The frontend provides an user interface for the users to interact with and is able to request data from the data backend. The following subsections explain the types of data the frontend can request.
-According uses cases are:
-
--   [FAQ](https://)
 
 #### 3.2.1 User system
-
-...
-According use cases are:
-
--   [to be determined (tbd)](https://)
-
-
-
 
 ### 3.3 Usability
 
