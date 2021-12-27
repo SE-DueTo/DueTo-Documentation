@@ -17,25 +17,17 @@ Generally, the user can create and list all of his transactions. It is also poss
 
 The user will be able to create new transactions with a name, reason for the transaction and the amount.
 
-![crud_create](crud_create.png)
-
 ### 2.3 Edit
 
 During editing the user can modify the transactions: change the name of the transaction, change the amount and the reason for the transaction.
-
-![crud_edit](crud_edit.png)
 
 ### 2.3 List
 
 The user will to be able to view all of his transactions, where he is presented a list with all his entries.
 
-![crud_list](crud_list.png)
-
 ### 2.4 Delete
 
 The user will be able to delete existing transactions.
-
-![crud_delete](crud_delete.png)
 
 ## 3. Special Requirements
 

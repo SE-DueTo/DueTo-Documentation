@@ -17,25 +17,20 @@ Generally, the user can create and list all of his groups. It is also possible t
 
 By creating a new group the user will be asked to enter a name and a text.
 
-![crud_create](crud_create.png)
-
 ### 2.3 Edit
 
 During editing the user can modify the name and add or remove members of the group.
 
-![crud_edit](crud_edit.png)
 
 ### 2.3 List
 
 The user will to be able to view all of his groups. Here, he is presented a list with all entries.
 
-![crud_list](crud_list.png)
 
 ### 2.4 Delete
 
 The user will be able to delete existing groups. Therefore, we added a button for the deletion of the group. To ensure he does not delete a group on accident we added a modal asking if he really wants to do this.
 
-![crud_delete](crud_delete.png)
 
 ## 3. Special Requirements
 
