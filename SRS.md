@@ -111,11 +111,11 @@ This document is designed for internal use only and will outline the development
 
 | Title                                                                                                 | Date       |
 | ----------------------------------------------------------------------------------------------------- | ---------- |
-| [Blog](https://sedueto.wordpress.com/)                                                     | 17/10/2018 |
-| [GitHub](https://github.com/SE-DueTo/fc-com/)                                                     | 17/10/2018 |
-| [Spring Boot](https://spring.io/projects/spring-boot)                                                 | 19/10/2018 |
-| [ReactJS](https://reactjs.org/)                                                                       | 19/10/2018 |
-| [Use Case Diagram](https://) | 21/10/2018 |
+| [Blog](https://sedueto.wordpress.com/)                                                     | 17/10/2021 |
+| [GitHub](https://github.com/SE-DueTo/fc-com/)                                                     | 17/10/2021 |
+| [Spring Boot](https://spring.io/projects/spring-boot)                                                 | 19/10/2021 |
+| [ReactJS](https://reactjs.org/)                                                                       | 19/10/2021 |
+| [Use Case Diagram](https://) | 21/10/2021 |
 
 ### 1.5 Overview
 
