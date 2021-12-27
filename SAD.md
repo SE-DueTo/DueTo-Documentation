@@ -68,9 +68,9 @@ The scope of this SAD is to show the architecture of our DueTo project. Illustra
 
 | Title                                                                                                                |    Date    | Publishing organization                    |
 | -------------------------------------------------------------------------------------------------------------------- | :--------: | ------------------------------------------ |
-| [DueTo Blog](https://sedueto.wordpress.com/)                                                 | 2018-10-XX | Team DueTo-Team                    |
-| [Repository on GitHub](https://github.com/SE-DueTo/)                                                       | 2018-10-XX | DueTo-Team                    |
-| [SRS](./SRS.md)                                                                                                      | 2018-10-XX | DueTo-Team                    |
+| [DueTo Blog](https://sedueto.wordpress.com/)                                                 | 2021-12-07 | DueTo-Team                    |
+| [Repository on GitHub](https://github.com/SE-DueTo/)                                                       | 2021-12-07 | DueTo-Team                    |
+| [SRS](./SRS.md)                                                                                                      | 2021-12-07 | DueTo-Team                    |
 
 ### 1.5 Overview
 
