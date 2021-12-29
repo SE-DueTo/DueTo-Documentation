@@ -3,7 +3,7 @@
 # 1 Settle debt
 
 ## 1.1 Brief Description
-Every registered user can settle an already existing debt. In this process the user can choose the preferred date for the payment and the ways (total amount, percentage, installments) and methods of the payment.  The steps that the user can take are summarized below.
+Any group member can add a new group member. To do this, he only needs the username of the new group member. The required steps are described in more detail below.
 
 # 2 Flow of Events
 ## 2.1 Basic Flow
