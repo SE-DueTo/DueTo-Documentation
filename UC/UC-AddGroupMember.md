@@ -18,7 +18,7 @@ Any group member can add a new group member. To do this, he only needs the usern
          
 
 ### 2.1.1 Activity Diagram
-![Settle Debt Activity Diagram](https://drive.google.com/file/d/16Un_5Ptxm9VFc0MCEsA_WhYm_8Hy6k_3/view?usp=sharing)
+![Add Group Member Activity Diagram](https://drive.google.com/file/d/16Un_5Ptxm9VFc0MCEsA_WhYm_8Hy6k_3/view?usp=sharing)
 
 ### 2.1.2 Mock-up
 (n/a)
