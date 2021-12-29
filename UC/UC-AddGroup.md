@@ -21,7 +21,7 @@ Any registered user can create a new group. To do this, he must specify a group 
          
 
 ### 2.1.1 Activity Diagram
-![Add Group Activity Diagram](https://drive.google.com/file/d/10lm4-NJgDR2PmNlnbZXSYM-EfX2g6jlr/view?usp=sharing)
+![Add Group Activity Diagram](https://drive.google.com/uc?id=10lm4-NJgDR2PmNlnbZXSYM-EfX2g6jlr)
 
 ### 2.1.2 Mock-up
 ![Insert Groupname Form Wireframe](https://drive.google.com/file/d/1EWdGvw8p50oudS2X-YbY4Yr1AV0rk7Rq/view?usp=sharing)

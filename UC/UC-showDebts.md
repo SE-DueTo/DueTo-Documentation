@@ -15,7 +15,7 @@ Each registered user can view the debts between himself and another user. The re
          
 
 ### 2.1.1 Activity Diagram
-![Show Debt Activity Diagram](https://drive.google.com/file/d/1umjLT3Gn-kGRwqs6XE5Z47J3vgr89pdp/view?usp=sharing)
+![Show Debt Activity Diagram](https://drive.google.com/uc?id=1umjLT3Gn-kGRwqs6XE5Z47J3vgr89pdp)
 
 ### 2.1.2 Mock-up
 (n/a)
