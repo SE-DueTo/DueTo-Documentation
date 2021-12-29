@@ -1,6 +1,6 @@
-# Use-Case Specification: Settle Debt
+# Use-Case Specification: Add Group Member
 
-# 1 Settle debt
+# 1 Add Group Member
 
 ## 1.1 Brief Description
 Any group member can add a new group member. To do this, he only needs the username of the new group member. The required steps are described in more detail below.

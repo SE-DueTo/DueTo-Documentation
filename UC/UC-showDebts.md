@@ -1,13 +1,13 @@
-# Use-Case Specification: Settle Debt
+# Use-Case Specification: Show Debt
 
-# 1 Settle debt
+# 1 Show debt
 
 ## 1.1 Brief Description
 Each registered user can view the debts between himself and another user. The required steps are described in more detail below.
 
 # 2 Flow of Events
 ## 2.1 Basic Flow
-- User clicks on the "User-UserDashboard" button
+- User clicks on the "User-User-Dashboard" button
 - if show debt:
     - NO: 
     - YES:

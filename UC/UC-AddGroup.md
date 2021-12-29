@@ -1,6 +1,6 @@
-# Use-Case Specification: Settle Debt
+# Use-Case Specification: Add Group
 
-# 1 Settle debt
+# 1 Add Group
 
 ## 1.1 Brief Description
 Any registered user can create a new group. To do this, he must specify a group name, as well as add other users to the group. The required steps are described in more detail below.
