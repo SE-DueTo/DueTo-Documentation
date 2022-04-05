@@ -169,7 +169,13 @@ Marked MVC class diagram
 
 ### 7.2 Deployment View
 
-to be determined (tbd)
+Our Service are hosted on the Microsoft Azure plaform and consists of two Azure Service Plans:
+
+- Azure App Service
+- Azure MySQL Service
+
+The hardware configuration is not known to us, as it scales automatically by its needed performance.
+
 
 ## 8. Implementation View
 
