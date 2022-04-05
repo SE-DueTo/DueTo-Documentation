@@ -21,9 +21,10 @@
         -   [2.1 Vision](#21-vision)
 
         -   [2.2 Product perspective](#22-product-perspective)
+        -   [2.3 Technology Stack](#23-technology-stack)
 
-        -   [2.3 User characteristics](#23-user-characteristics)
-        -   [2.4 Dependencies](#24-dependencies)
+        -   [2.4 User characteristics](#24-user-characteristics)
+        -   [2.4 Use Cases](#25-use-cases)
 
     -   [3. Specific Requirements](#3-specific-requirements)
 
@@ -152,9 +153,21 @@ Integrated development environments (IDE)
 
 Our usergroup spans across ages and jobs. Everybody who lents money to someone and the other way round is part of our targeted usergroup.
 
-### 2.5 Dependencies
+### 2.5 Use Cases
 
-to be determined (tbd)
+ Add Group : https://github.com/SE-DueTo/DueTo-Documentation/blob/main/UC/UC-AddGroup.md
+
+ Add Group Member : https://github.com/SE-DueTo/DueTo-Documentation/blob/main/UC/UC-AddGroupMember.md
+
+ Settle Debt : https://github.com/SE-DueTo/DueTo-Documentation/blob/main/UC/UC-SettleDebt.md
+
+ 2.5.4 Show Debt : https://github.com/SE-DueTo/DueTo-Documentation/blob/main/UC/UC-showDebts.md
+
+ 2.5.5 Add Transaction : https://github.com/SE-DueTo/DueTo-Documentation/blob/main/UC/UC_AddTransaction.md
+
+ 2.5.6 CRUD Groups : https://github.com/SE-DueTo/DueTo-Documentation/tree/main/UC
+
+ 2.5.7 CRUD Transaction : https://github.com/SE-DueTo/DueTo-Documentation/blob/main/UC/CRUD_Transaction.md
 
 ## 3. Specific Requirements
 
