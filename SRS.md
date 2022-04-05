@@ -1,16 +1,6 @@
 # Software Requirements Specification
 
 ## For DueTo
-## Version 1.0
-
-## Revision History
-
-|**Date**|**Version**|**Description**|**Author**|
-| :-: | :-: | :-: | :-: |
-|22/10/21|1.0|\<details\>|DueTo-Team|
-| | | | |
-| | | | |
-| | | | |
 
 ## Table of Contents
 
