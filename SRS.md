@@ -1,6 +1,6 @@
 # Software Requirements Specification
 
-## For DueTo
+## DueTo Team
 
 ## Table of Contents
 
@@ -11,7 +11,9 @@
     -   [1. Introduction](#1-introduction)
 
         -   [1.1 Purpose](#11-purpose)
+
         -   [1.2 Scope](#12-scope)
+
         -   [1.3 Definitions, Acronyms and Abbreviations](#13-definitions-acronyms-and-abbreviations)
         -   [1.4 References](#14-references)
         -   [1.5 Overview](#15-overview)
@@ -24,61 +26,45 @@
         -   [2.3 Technology Stack](#23-technology-stack)
 
         -   [2.4 User characteristics](#24-user-characteristics)
-        -   [2.4 Use Cases](#25-use-cases)
 
     -   [3. Specific Requirements](#3-specific-requirements)
 
-        -   [3.1 Functionality – Data Backend](#31-functionality--data-backend)
+        -   [3.1 Functionality](#31-functionality)
 
-            -   [3.1.1 Read data given over API endpoints](#311-read-data-given-over-api-endpoints)
-            -   [3.1.2 Parse data](#312-parse-data)
-            -   [3.1.3 Provide data](#313-provide-data)
+        -   [3.2 Usability](#32-usability)
 
-        -   [3.2 Functionality – User Interface](#32-functionality--user-interface)
+            -   [3.2.1 No training needed](#321-no-training-needed)
 
-            -   [3.2.1 User system](#321-user-system)
+        -   [3.3 Reliability](#33-reliability)
 
-        -   [3.3 Usability](#33-usability)
+            -   [3.3.1 Availability](#331-availability)
 
-        -   [3.4 Reliability](#34-reliability)
+            -   [3.3.2 Defect Rate](#332-defect-rate)
 
-            -   [3.4.1 Availability](#341-availability)
-            -   [3.4.2 MTBF, MTTR](#342-mtbf-mttr)
-            -   [3.4.3 Accuracy](#343-accuracy)
-            -   [3.4.4 Bug classes](#344-bug-classes)
+            -   [3.3.3 Bug classes](#333-bug-classes)
+
+        -   [3.4 Performance](#34-performance)
+
+            -   [3.4.1 Capacity](#341-capacity)
+
+            -   [3.4.2 Storage](#342-storage)
+
+            -   [3.4.3 App perfomance / Response time](#343-app-perfomance-/-response-time)
 
         -   [3.5 Performance](#35-performance)
 
-            -   [3.5.1 Response time](#351-response-time)
-            -   [3.5.2 Throughput](#352-throughput)
-            -   [3.5.3 Capacity](#353-capacity)
-            -   [3.5.4 Resource utilization](#354-resource-utilization)
+            -   [3.5.1 Coding Standards](#351-coding-standards)
+            -   [3.5.2 Testing Strategy](#352-testing-strategy)
 
-        -   [3.6 Supportability](#36-supportability)
+        -   [3.6 Design Constraints](#36-design-constraints)
 
-        -   [3.7 Design Constraints](#37-design-constraints)
+            -   [3.6.1 Development tools](#361-development-tools)
 
-            -   [3.7.1 Development tools](#371-development-tools)
-            -   [3.7.2 Spring Boot](#372-spring-boot)
-            -   [3.7.3 ReactJS](#373-reactjs)
-            -   [3.7.4 Supported Platforms](#374-supported-platforms)
+            -   [3.6.2 Supported Platforms](#362-supported-platforms)
 
-        -   [3.8 Online User Documentation and Help System Requirements](#38-online-user-documentation-and-help-system-requirements)
+        -   [3.7 Interfaces](#37-interfaces)
 
-        -   [3.9 Purchased Components](#39-purchased-components)
-
-        -   [3.10 Interfaces](#310-interfaces)
-
-            -   [3.10.1 User Interfaces](#3101-user-interfaces)
-            -   [3.10.2 Hardware Interfaces](#3102-hardware-interfaces)
-            -   [3.10.3 Software Interfaces](#3103-software-interfaces)
-            -   [3.10.4 Communications Interfaces](#3104-communications-interfaces)
-
-        -   [3.11 Licensing Requirements](#311-licensing-requirements)
-
-        -   [3.12 Legal, Copyright and other Notices](#312-legal-copyright-and-other-notices)
-
-        -   [3.13 Applicable Standards](#313-applicable-standards)
+            -   [3.7.1 User Interfaces](#371-user-interfaces)
 
     -   [4. Supporting Information](#4-supporting-information)
 
@@ -97,6 +83,12 @@ This document is designed for internal use only and will outline the development
 | Term     |                                     |
 | -------- | ----------------------------------- |
 | **SRS**  | Software Requirements Specification |
+| **tbd**  | to be determined |
+| **n/a**  | not applicable |
+| **UC**  | Use Case |
+| **UI**  | Use Interface |
+
+
 
 ### 1.4 References
 
@@ -131,12 +123,14 @@ Frontend
 
     ReactJS
     Javascript
+    Typescript
     CSS
     MaterialUI
 
 Backend
 
     Spring-Boot
+    Docker
     MySQL
 
 Version control
@@ -151,103 +145,83 @@ Integrated development environments (IDE)
 
 ### 2.4 User characteristics
 
-Our usergroup spans across ages and jobs. Everybody who lents money to someone and the other way round is part of our targeted usergroup.
-
-### 2.5 Use Cases
-
- Add Group : https://github.com/SE-DueTo/DueTo-Documentation/blob/main/UC/UC-AddGroup.md
-
- Add Group Member : https://github.com/SE-DueTo/DueTo-Documentation/blob/main/UC/UC-AddGroupMember.md
-
- Settle Debt : https://github.com/SE-DueTo/DueTo-Documentation/blob/main/UC/UC-SettleDebt.md
-
- 2.5.4 Show Debt : https://github.com/SE-DueTo/DueTo-Documentation/blob/main/UC/UC-showDebts.md
-
- 2.5.5 Add Transaction : https://github.com/SE-DueTo/DueTo-Documentation/blob/main/UC/UC_AddTransaction.md
-
- 2.5.6 CRUD Groups : https://github.com/SE-DueTo/DueTo-Documentation/tree/main/UC
-
- 2.5.7 CRUD Transaction : https://github.com/SE-DueTo/DueTo-Documentation/blob/main/UC/CRUD_Transaction.md
+Our user group spans across ages and jobs. Everybody who lents money to someone and the other way around is part of our targeted user group.
 
 ## 3. Specific Requirements
 
-### 3.1 Functionality – Data Backend
+### 3.1 Functionality
 
-to be determined (tbd)
+This section contains the different use cases and their functionality. The separate use cases can be found in the links below: 
 
-#### 3.1.1 Read data given over API endpoints
+- [Add Group](https://github.com/SE-DueTo/DueTo-Documentation/blob/main/UC/UC-AddGroup.md)
 
-to be determined (tbd)
+- [Add Group Member](https://github.com/SE-DueTo/DueTo-Documentation/blob/main/UC/UC-AddGroupMember.md)
 
-#### 3.1.2 Parse data
+- [Settle Debt](https://github.com/SE-DueTo/DueTo-Documentation/blob/main/UC/UC-SettleDebt.md)
 
-to be determined (tbd)
+- [Show Debt](https://github.com/SE-DueTo/DueTo-Documentation/blob/main/UC/UC-showDebts.md)
 
-#### 3.1.3 Provide data
+- [Add Transaction](https://github.com/SE-DueTo/DueTo-Documentation/blob/main/UC/UC_AddTransaction.md)
 
-to be determined (tbd)
+- [CRUD Groups](https://github.com/SE-DueTo/DueTo-Documentation/blob/main/UC/CRUD_Groups.md)
 
-### 3.2 Functionality – User Interface
+- [CRUD Transaction](https://github.com/SE-DueTo/DueTo-Documentation/blob/main/UC/CRUD_Transaction.md)
+### 3.2 Usabilty
 
-The frontend provides an user interface for the users to interact with and is able to request data from the data backend. The following subsections explain the types of data the frontend can request.
+The frontend provides a user interface for the users to interact with and is able to request data from the data backend. We designed the user interface as intuitive and self-explanatory as possible to make the user feel comfortable using the app. The UI is minimalistic and not crowded and overwhelming. In this way, the information the user searches for should be easily readable and the user should be able to quickly navigate through the website.
 
-#### 3.2.1 User system
+#### 3.2.1 No training needed
 
-### 3.3 Usability
+Our goal is that a user searches up the application, opens it and is able to use all features without any explanation or help.
 
-to be determined (tbd)
+### 3.3 Reliability
 
-### 3.4 Reliability
+#### 3.3.1 Availability
 
-to be determined (tbd)
+The Application does not communicate with other instances of itself. Therefore, the uptime should be 99% as long as a working version of the application is available. The only thing that can fail is the data base that provides the user, group and transaction information, so that the user gets a corresponding notification.
 
-#### 3.4.1 Availability
+3.3.2 Defect Rate
 
-to be determined (tbd)
+The goal is that there is no loss of any data within our services.
 
-#### 3.4.2 MTBF, MTTR
-
-to be determined (tbd)
-
-#### 3.4.3 Accuracy
-
-to be determined (tbd)
-
-#### 3.4.4 Bug classes
+#### 3.3.3 Bug classes
 
 We classify bugs like the following:
 
 -   **Critical bug**: A critical bug occurs when the database starts dropping data without intention, secret user information, like passwords, are open to the public or users are not able to use the application at all.
 -   **Non critical bug**: A non critical bug appears when the user still can use the application but it appears glitched and the user experience is slightly influenced.
 
-### 3.5 Performance
+### 3.4 Performance
 
-to be determined (tbd)
+#### 3.4.1 Capacity
 
-#### 3.5.1 Response time
+The system should be able to manage to run on low computing power devices to make it accessible to as many people as possible.
 
-to be determined (tbd)
+#### 3.4.2 Storage
 
-#### 3.5.2 Throughput
+The backend runs a MySQL data base in a Docker container. Docker works great in packaging an application or a software into one single "unit", which you can then deploy anywhere as long as Docker engine is installed. It expects the package, or image to be run as a single process per container. With Docker a MySQL image is build, using a specific version and vendor, the image is packaged and distributed to anybody who wants to quickly fire a MySQL instance.
 
-to be determined (tbd)
+#### 3.4.3 App perfomance / Response time
 
-#### 3.5.3 Capacity
+To provide the best App perfomance we aim to keep the response time as low as possible. This will make the user experience much better.
 
-to be determined (tbd)
+### 3.5 Supportability
 
-#### 3.5.4 Resource utilization
+#### 3.5.1 Coding Standards
 
-to be determined (tbd)
+We are going to write the code by using all of the most common clean code standards, e. g. we will name our variables and methods by their functionalities. This keeps the code easy to read by everyone and make further developement much easier. We will be also using different design patterns to make modifications of the code easier in the future and also make our code more understandable. For this, we settled on using the SOFA principle, DTOs and Mappers. You can find more about this topic [here](https://sedueto.wordpress.com/2022/05/20/week-2-7-design-patterns/)
+ 
+#### 3.5.3 Testing Strategy
 
-### 3.6 Supportability
+ - Integrated testing (API is reachable, can connect to the data base and returns a value)
+- Unit tests (Frontend, Backend)
+- UI tests (Cucumber)
 
-to be determined (tbd)
+### 3.6 Design Constraints
 
-### 3.7 Design Constraints
+We are trying to provide a modern and easy to handle design for the UI. The architecture of our app should also be kept simple. To achieve that the functionalities will be kept as modular as possible.
 
-
-#### 3.7.1 Development tools
+#### 3.6.1 Development tools
 
 -   Git: version control system
 -   JetBrains IntelliJ: Spring MVC backend development
@@ -257,56 +231,28 @@ to be determined (tbd)
 -   Jira: Project planning tool
 -   Github Actions: Continous integration service
 
-#### 3.7.2 Spring Boot
+Because we are progamming a website with React, we chose Typescript/JavaScript for our front end. Also we are using the basic frontend - backend principle to keep UI-referred seperated from the backend services. To make the communication between the two parts easy, we implemented a RESTful-API between them which will provide the data in JSON-Format. We also use Docker containers to run MySQL data base.
 
-to be determined (tbd)
+#### 3.6.2 Supported Platforms
 
-#### 3.7.3 ReactJS
+Any internet-capable device.
 
-to be determined (tbd)
+### 3.7 Interfaces
 
-#### 3.7.4 Supported Platforms
+#### 3.7.1 User Interfaces
 
-to be determined (tbd)
+The User interfaces that will be implented are:
 
-### 3.8 Online User Documentation and Help System Requirements
+- Login - a login page will be available
+- Register - provides a registration form
+- User Dashboard - lists of all debts and transactions
+- User-User Dashboard - a dashboard, containg two people. It lists all debts and transactions between the two members
+- Transactions - the user is able to add a transaction in order to pay the owned amount of money
+- Debts - the user can see and settle the debts that he/she has
 
-to be determined (tbd)
+### 3.8 Legal, Copyright and other Notices
 
-### 3.9 Purchased Components
-
--   to be determined (tbd)
-
-### 3.10 Interfaces
-
-#### 3.10.1 User Interfaces
-
-to be determined (tbd)
-
-#### 3.10.2 Hardware Interfaces
-
--   to be determined (tbd)
-
-#### 3.10.3 Software Interfaces
-
--   to be determined (tbd)
-
-#### 3.10.4 Communications Interfaces
-
-to be determined (tbd)
-
-### 3.11 Licensing Requirements
-
-to be determined (tbd)
-
-### 3.12 Legal, Copyright and other Notices
-
--   to be determined (tbd)
-
-### 3.13 Applicable Standards
-
--   to be determined (tbd)
-
+We do not take responsibilty for any incorrect data or errors in the application.
 ## 4. Supporting Information
 
 For a better overview, watch the table of contents and/or references.
