@@ -29,12 +29,11 @@
         - [6.4 Incident Logs and Change Requests](#64-incident-logs-and-change-requests)
         - [6.5 Smoke Test Suite and Supporting Test Scripts](#65-smoke-test-suite-and-supporting-test-scripts)
     - [7. Testing Workflow](#7-testing-workflow)
-    - [8. Environmental Needs](#9-environmental-needs)
+    - [8. Environmental Needs](#8-environmental-needs)
         - [8.2 Base Software Elements in the Test Environment](#82-base-software-elements-in-the-test-environment)
         - [8.3 Productivity and Support Tools](#83-productivity-and-support-tools)
     - [9. Responsibilities, Staffing, and Training Needs](#9-responsibilities-staffing-and-training-needs)
-        - [9.1 People and Roles](#101-people-and-roles)
-        
+        - [9.1 People and Roles](#91-people-and-roles)
 
 ## 1. Introduction
 
@@ -102,7 +101,8 @@ At this point in the development, testing should primarily ensure the functional
 ## 3. Target Test Items
 
 - React Frontend
-- Java Spring Backend
+- Java Spring / Maven Backend
+- Integration tests
 
 ## 4. Outline of Planned Tests
 
@@ -112,10 +112,12 @@ At this point in the development, testing should primarily ensure the functional
 
 - UI testing of Components (view, interaction, ...)
 - Unit testing
+- Integration testing (BE-Calls)
 
 *Java Spring Backend*:
 
 - JUnit testing of functionalities
+- Integration testing (DB-Calls
 
 ### 4.2 Outline of Test Exclusions
 
@@ -151,6 +153,7 @@ By UI testing the application is tested from the perspective of the user. The go
 |Technique Objective    | Ensure that user interactions with frontend and the view work properly     |
 |Technique              | Converting Cucumber .feature-files (see [feature-files](https://github.com/SE-DueTo/dueto-frontend/tree/main/features)) into UI tests with React |
 |Required Tools         | Since UI tests are included in the unit tests with React, the same applies as in [5.1.1](#511-user-interface-testing) |
+|Success Criteria 	|All UI tests pass. Pipeline is able to test FE
 |Special Considerations | -                                                                    |
 
 #### 5.1.3 Integration Testing (API Testing)
@@ -162,7 +165,7 @@ Api Testing is part of integration testing. Integration tests test multiple modu
 |Technique Objective    | Test the provided APIs with Postman       |
 |Technique              | Pending decision of tool                                             |
 |Required Tools         |  Postman                                                       |
-|Success Criteria       | All tests pass    |
+|Success Criteria       | All tests pass. Pipeline is able to test BE    |
 |Special Considerations | -                                                                    |
 
 
@@ -174,15 +177,20 @@ The tests in frontend and backend produce evaluation summaries. Thus, each time 
 
 ## 6.2 Reporting on Test Coverage
 
-tbd
+We used Codacy and SonarCloud to control our code quality, in which the Frontend and the Backend got an A. We used the integrated tools of IntelliJ to calculate our test coverage. The Unit Test as well as the API-Test are used to ensure that our application runs without any errors.
 
- [Here]() can be viewed the test coverage of backend.
+The Cyclomatic complexity is a metric we took a look at in our Backend, to ensure that all request are fast, and the program has as few as possible decisions to make.
 
- [Here]() can be viewed the test coverage of frontend.
+[Metrics blog post](https://sedueto.wordpress.com/2022/06/03/2-8-metrics/)
+
+- [SonarCloud test coverage](https://sonarcloud.io/organizations/se-dueto/projects)
+- [Codacy Backend test coverage](https://app.codacy.com/gh/SE-DueTo/DueTo-Backend/dashboard)
+- [Codacy Frontend test coverage](https://app.codacy.com/gh/SE-DueTo/dueto-frontend/dashboard?branch=main) 
+
 
 ## 6.3 Perceived Quality Reports
 
-The code quality tool is sonarlint.
+The code quality tools are SonarCloud and Codacy.
 
 ## 6.4 Incident Logs and Change Requests
 
@@ -214,8 +222,8 @@ The following tools will be employed to support the test process for this Test P
 | Tool Category or Type | Tool Brand Name                              |
 |-----------------------|----------------------------------------------|
 | Repository            | [github.com](https://github.com/SE-DueTo)|
-| Test Coverage FE | tbd |
-| Test Coverage BE | tbd |
+| Test Coverage FE | [SonarCloud](https://sonarcloud.io/organizations/se-dueto/projects),  [Codacy Frontend](https://app.codacy.com/gh/SE-DueTo/dueto-frontend/dashboard?branch=main) |
+| Test Coverage BE | [SonarCloud](https://sonarcloud.io/organizations/se-dueto/projects), [Codacy Backend](https://app.codacy.com/gh/SE-DueTo/DueTo-Backend/dashboard) |
 
 ## 9. Responsibilities, Staffing, and Training Needs
 
@@ -226,3 +234,16 @@ The following tools will be employed to support the test process for this Test P
 | Test Manager  | whole team         | Provides management oversight.        |
 | Test Designer | whole team      | Defines the technical approach to the implementation of the test effort. |
 | Test System Administrator | whole team | Ensures test environment and assets are managed and maintained. |
+
+
+## 10. Risks, Dependencies, Assumptions, and Constraints
+
+| Risk | Mitigation Strategy | Contingency (Risk is realized) |
+|------|---------------------|--------------------------------|
+| Too much focus on tests and too little on functions | Test only important and complex functions | write clean code |
+| False certainty through false tests | The one who writes the functionality should also write the tests | take your time |
+| Different interpretations of a functionality | write tests first | Delimit functionality unambiguously through tests |
+
+## 11. Management Process and Procedures
+
+n/a
