@@ -167,6 +167,8 @@ Marked MVC class diagram
 
 ![Deployment View](https://drive.google.com/uc?id=1ONnJIUAL-fyRoChHP6SaufGdWcy37V09)
 
+Because Google Drive is weird: [Link](https://drive.google.com/file/d/1ONnJIUAL-fyRoChHP6SaufGdWcy37V09/view?usp=sharing)
+
 ### 7.2 Deployment View
 
 Our Service are hosted on the Microsoft Azure plaform and consists of two Azure Service Plans:
