@@ -114,6 +114,7 @@ Metrics & Patterns (part of CI / CD mentioned Travis pipeline):
 Deployment (part of CI / CD mentioned Travis pipeline):
 
 -   Docker
+-   Apache2
 
 In detail:
 
@@ -171,12 +172,12 @@ Because Google Drive is weird: [Link](https://drive.google.com/file/d/1ONnJIUAL-
 
 ### 7.2 Deployment View
 
-Our Service are hosted on the Microsoft Azure plaform and consists of two Azure Service Plans:
+Our Service are hosted on a DHBW-Server, running a Apache2 Server to relay requests to our static frontend, or to proxy these requests into a virtual network, running our Backend and database.
 
-- Azure App Service
-- Azure MySQL Service
-
-The hardware configuration is not known to us, as it scales automatically by its needed performance.
+Hardware (a bit overpowered :) ):
+- 2 CPU cores
+- 4 GB RAM
+- 40 GB storage
 
 
 ## 8. Implementation View
