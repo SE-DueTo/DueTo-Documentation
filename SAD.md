@@ -25,26 +25,25 @@
 
     -   [4. Use-Case View](#4-use-case-view)
 
-        -   [4.1 Use-Case Realizations](#41-use-case-realizations)
-
     -   [5. Logical View](#5-logical-view)
 
-        -   [5.1 Overview](#51-overview)
+        -   [5.1 MVC high level diagram](#51-mvc-high-level-diagram)
 
-    -   [6. Process View](#6-process-view)
+        -   [5.2 Marked MVC class diagram](#52-marked-mvc-class-diagram)
 
-    -   [7. Deployment View](#7-deployment-view)
+    -   [6. Deployment View](#6-deployment-view)
 
-    -   [8. Implementation View](#8-implementation-view)
+    -   [6.1 Deployment Process](#61-deployment-process)
 
-        -   [8.1 Overview](#81-overview)
-        -   [8.2 Layers](#82-layers)
+    -   [6.2 Deployment View](#62-deployment-view)
 
-    -   [9. Data View](#9-data-view)
+    -   [7. Implementation View](#7-implementation-view)
 
-    -   [10. Size and Performance](#10-size-and-performance)
+    -   [8. Data View](#8-data-view)
 
-    -   [11. Quality/Metrics](#11-qualitymetrics)
+    -   [9. Size and Performance](#9-size-and-performance)
+
+    -   [10. Quality/Metrics](#10-qualitymetrics)
 
 ## 1. Introduction
 
@@ -93,23 +92,27 @@ IDEs:
 
 Languages:
 
--   Frontend: JavaScript, HTML, CSS, JSON for data transfer
+-   Frontend: JavaScript, TypeScript HTML, CSS, JSON for data transfer
 -   Backend: Java, hardly any SQL
 
 Frameworks:
 
 -   Frontend: ReactJS, MaterialUI
--   Backend: Springboot
+-   Backend: Spring boot, Docker
 
-Testing (part of CI / CD mentioned Travis pipeline):
+Testing (part of CI / CD Maven pipeline):
 
 -   Frontend: Selenium for running UI tests based on Gherkin / Cucumber .feature files
--   Backend: to be determined (tbd)
--   Coverage: to be determined (tbd)
+-   Backend: JUnit 5
 
-Metrics & Patterns (part of CI / CD mentioned Travis pipeline):
+Metrics & Patterns (part of CI / CD Maven pipeline):
 
--   to be determined (tbd)
+-  [Metrics](https://sedueto.wordpress.com/2022/06/03/2-8-metrics/):
+ [SonarCloud](https://sonarcloud.io/organizations/se-dueto/projects), 
+[Codacy Backend](https://app.codacy.com/gh/SE-DueTo/DueTo-Backend/dashboard),
+[Codacy Frontend](https://app.codacy.com/gh/SE-DueTo/dueto-frontend/dashboard?branch=main) 
+
+- [Patterns](https://sedueto.wordpress.com/2022/05/20/week-2-7-design-patterns/)
 
 Deployment (part of CI / CD mentioned Travis pipeline):
 
@@ -137,7 +140,7 @@ We use Visual Studio Code for coding in the frontend. To display we use HTML and
 
 ## 3. Architectural Goals and Constraints
 
-We decided to use Spring MVC as our main framework. It allows us to unite backend, frontend development and the database integration in one code base.
+We decided to use Spring MVC as our main framework. It allows us to unite backend, frontend development and the database integration in one code base. The backend runs a MySQL data base in a Docker container. Docker works great in packaging an application or a software into one single "unit", which you can then deploy anywhere as long as Docker engine is installed. It expects the package, or image to be run as a single process per container. With Docker a MySQL image is build, using a specific version and vendor, the image is packaged and distributed to anybody who wants to quickly fire a MySQL instance.
 
 ## 4. Use-Case View
 
@@ -145,32 +148,24 @@ Our Use-Case-Diagram
 
 ![UseCaseDiagram](https://drive.google.com/uc?id=1cm9gGoyGPQBgYl-CeENYOEPFsI-1e7nx)
 
-### 4.1 Use-Case Realizations
-
--   to be determined (tbd)
-
 ## 5. Logical View
 
-MVC high level diagram
+### 5.1 MVC high level diagram
 ![MVC high level diagram](img/mvc_structure.png)
 
-Marked MVC class diagram
+### 5.2 Marked MVC class diagram
 
 ![MVC marked diagram](img/mvc_architecture.png)
 
-## 6. Process View
+## 6. Deployment View
 
--   to be determined (tbd)
-
-## 7. Deployment View
-
-### 7.1 Deployment Process
+### 6.1 Deployment Process
 
 ![Deployment View](https://drive.google.com/uc?id=1ONnJIUAL-fyRoChHP6SaufGdWcy37V09)
 
 Because Google Drive is weird: [Link](https://drive.google.com/file/d/1ONnJIUAL-fyRoChHP6SaufGdWcy37V09/view?usp=sharing)
 
-### 7.2 Deployment View
+### 6.2 Deployment View
 
 Our Service are hosted on a DHBW-Server, running a Apache2 Server to relay requests to our static frontend, or to proxy these requests into a virtual network, running our Backend and database.
 
@@ -180,21 +175,13 @@ Hardware (a bit overpowered :) ):
 - 40 GB storage
 
 
-## 8. Implementation View
+## 7. Implementation View
 
--   to be determined (tbd)
+-   n/a
 
-### 8.1 Overview
+## 8. Data View
 
--   to be determined (tbd)
-
-### 8.2 Layers
-
--   to be determined (tbd)
-
-## 9. Data View
-
-The following graphic describes the relationship model of the in use database
+The following graphic describes the relationship model of the in use data base
 
 Relationship Model
 ![Relationship Model](https://drive.google.com/uc?id=1nHTh1wwdvAp0_Q6aGNdHvT5h5j7aE481)
@@ -205,10 +192,18 @@ Real world Model
 Class Diagram
 ![Class Diagram](https://github.com/SE-DueTo/DueTo-Documentation/raw/main/img/class_diagram.png)
 
-## 10. Size and Performance
+## 9. Size and Performance
 
--   to be determined (tbd)
+-   n/a
 
-## 11. Quality/Metrics
+## 10. Quality/Metrics
 
-to be determined (tbd)
+We used Codacy and SonarCloud to control our code quality, in which the Frontend and the Backend got an A. We used the integrated tools of IntelliJ to calculate our test coverage. The Unit Test as well as the API-Test are used to ensure that our application runs without any errors.
+
+The Cyclomatic complexity is a metric we took a look at in our Backend, to ensure that all request are fast, and the program has as few as possible decisions to make.
+
+[Metrics blog post](https://sedueto.wordpress.com/2022/06/03/2-8-metrics/):
+
+- [SonarCloud](https://sonarcloud.io/organizations/se-dueto/projects)
+- [Codacy Backend](https://app.codacy.com/gh/SE-DueTo/DueTo-Backend/dashboard)
+- [Codacy Frontend](https://app.codacy.com/gh/SE-DueTo/dueto-frontend/dashboard?branch=main) 
